@@ -64,6 +64,7 @@ font-size: 70px;
 
  .top-cantainer{
    display: flex;
+   align-items: center;
    width: 100%;
    height: auto;
  }
@@ -188,7 +189,6 @@ font-size: 70px;
     }
     .footer-item{
       display: flex;
-      border: 2px solid yellow;
       justify-content: space-evenly;
     }
       /* mobile */
@@ -201,6 +201,7 @@ font-size: 70px;
        }
        .top-cantainer{
          flex-direction: column;
+         grid-template-columns: repeat(1,1fr);
        }
        .end-section{
          grid-template-columns: 1fr;
@@ -210,7 +211,7 @@ font-size: 70px;
          flex-direction: column;
        }
        .container{
-         grid-template-columns: repeat(1,1fr);
+         grid-template-columns: repeat(1,1fr); 
          
       }
          
@@ -222,6 +223,8 @@ font-size: 70px;
             grid-template-columns: repeat(2,1fr);
             
          }
-         
+         .top-cantainer{
+            flex-direction: column;
+         }
       }
       
